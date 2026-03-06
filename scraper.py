@@ -3,7 +3,7 @@ import csv
 import time
 import re
 
-def scrape_goodreads_shelf_expanded(user_id, shelf_name="to-get", output_file="goodreads_to_get.csv", max_books=1000):
+def scrape_goodreads_shelf_expanded(user_id, shelf_name="to-get", output_file="goodreads_to_get.csv", max_books=1001):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
@@ -72,4 +72,4 @@ def scrape_goodreads_shelf_expanded(user_id, shelf_name="to-get", output_file="g
 
 if __name__ == "__main__":
     user_id = "25519145"
-    scrape_goodreads_shelf_expanded(user_id, max_books=1000)
+    scrape_goodreads_shelf_expanded(user_id, max_books=1001)
